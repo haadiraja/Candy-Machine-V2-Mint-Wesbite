@@ -8,6 +8,7 @@ import { clusterApiUrl } from "@solana/web3.js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   getPhantomWallet,
+  getSlopeWallet,
   getSolflareWallet,
   getSolletWallet,
   getMathWallet,
@@ -45,7 +46,7 @@ const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
 
   const wallets = useMemo(
-    () => [getPhantomWallet(), getSolflareWallet(), getSolletWallet(), getMathWallet() ],
+    () => [ getPhantomWallet(), getSlopeWallet(), getSolflareWallet(), getSolletWallet(), getMathWallet() ],
     []
   );
 
@@ -62,74 +63,102 @@ const App = () => {
           <img src="/icons/close.svg" alt="" onClick={toggleMenu}/>
         </div>
         <ul>
+      
           <li>
-            <img className="mobile-nav-logo" src="/img/logo.png" alt="" />
-          </li>
-          <li>
-            <a href="/#link1" onClick={toggleMenu}>
-              Link 1
+            <a href="https://apexninjaguru.com/" onClick={toggleMenu}>
+              <b>
+              Home
+              </b>
             </a>
           </li>
           <li>
-            <a href="/#link2" onClick={toggleMenu}>
-              Link 2
+            <a href="https://apexninjaguru.com/#Roadmap" onClick={toggleMenu}>
+              <b>
+              Roadmap
+              </b>
+            </a>
+          </li>
+          {/* <li>
+            <a href="https://apexninjaguru.com/#Attributes" onClick={toggleMenu}>
+              <b>
+              Rarity
+              </b>
             </a>
           </li>
           <li>
-            <a href="/#link3" onClick={toggleMenu}>
-              Link 3
-            </a>
-          </li>
-          <li>
-            <a href="/#link4" onClick={toggleMenu}>
-              Link 4
+            <a href="https://apexninjaguru.com/#Team" onClick={toggleMenu}>
+              <b>
+              Team
+              </b>
             </a>
           </li>
           <li>
             <div className="social-icons">
-              <img className="nav-social" src="/icons/twitter.svg" alt="" />
-              <img className="nav-social" src="/icons/discord.svg" alt="" />
+              <a href="https://apexninjaguru.com/">
+            <img className="mobile-nav-logo" src="/img/logo.png" alt="" />
+            </a>
+
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
-      <div className="mobile-menu-button" onClick={toggleMenu}>
-        <img src="/icons/menu.svg" alt="" />
-      </div>
+  
       <nav>
         <div className="nav-container">
-          <img className="nav-logo" src="/img/logo.png" alt="" />
-          <a className="hide-800" href="/#link1">
-            Link 1
+          <a href="https://dopedudes.art/">
+          <img className="mobile-nav-logo" width="100" src="/img/logo.png" alt="" />
           </a>
-          <a className="hide-800" href="/#link2">
-            Link 2
-          </a>
-          <a className="hide-800" href="/#link3">
-            Link 3
-          </a>
-          <a className="hide-800" href="/#link4">
-            Link 4
-          </a>
-          <div className="social-icons hide-800">
-            <img className="nav-social" src="/icons/twitter.svg" alt="" />
-            <img className="nav-social" src="/icons/discord.svg" alt="" />
+          <div className="social-icons hide-800" style={{ padding: "20px 0 0" }}>
+          <img className="mobile-nav-logo" width="108" src="/img/1.png" alt="" />
+          </div>
+          <div className="social-icons hide-800" style={{ padding: "20px 0 0" }}>
+          <img className="mobile-nav-logo" width="108" src="/img/2.png" alt="" />
+          </div>
+          <div className="social-icons hide-800" style={{ padding: "20px 0 0" }}>
+          <img className="mobile-nav-logo" width="108" src="/img/3.png" alt="" />
+          </div>
+          <div className="social-icons hide-800" style={{ padding: "20px 0 0" }}>
+          <img className="mobile-nav-logo" width="108" src="/img/4.png" alt="" />
+          </div>
+          <div className="social-icons hide-800" style={{ padding: "20px 0 0" }}>
+          <img className="mobile-nav-logo" width="108" src="/img/5.png" alt="" />
           </div>
         </div>
       </nav>
       <div className="content-wrapper">
           <header className="card" id="link1">
             <div style={{ padding: "0 24px 0 24px 0" }}>
-              <h3 className="text-secondary-color">Welcome To</h3>
-              <h1 className="pb-3">The Boiler Plate</h1>
+              <h3 className="text-secondary-color" style={{ color: "white" }} >Welcome To The</h3>
+              <h1 className="pb-3" style={{ color: "white" }} >Dope Dudes Mint</h1>
+              <h3 className="pb-3" style={{ color: "white" }}>WL Presale:   0.3 SOL 
+                            <br />
+               Public Sale:   0.5 SOL 
+              </h3>
+{/* 
+              <div className="social-icons hide-800">
+                <a target="_blank" href="http://www.twitter.com/">
+            <img className="nav-social" src="/icons/twitter.svg" alt="" />
+            </a>
+            <a target="_blank" href="https://discord.gg/B79cJg3Khy">
+
+            <img className="nav-social" src="/icons/discord.svg" alt="" />
+            </a>
+
+          </div> */}
               <p className="text-secondary-color">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                scelerisque ipsum non est porta mollis. Donec sapien sapien, dictum
-                eget enim sed, hendrerit semper orci. Donec ante magna, consequat at
-                eros ac, eleifend dictum sem. Nam vitae condimentum lorem.
-                Vestibulum molestie dui turpis, tincidunt porta sem congue nec.
+                
+
+              Dope Dudes are 2222 unique PFP avatars. We created over 350 assets paired with 8 traits. The possibilities are undetermined, and the assets are ranked by their rarity. Every single piece of the assets is hand drawn and quality is checked by our artist thoughtfully.
+
+
+
+</p>
+<br />
+<p className="text-secondary-color">
+The Dope Dudes are living in Solana blockchain and they costs 0.5 SOL per mint. Let’s hop into the world of Dope Dudes to explore and rise to the moon with community.
               </p>
             </div>
+            
             <div>
               <ThemeProvider theme={theme}>
                 <ConnectionProvider endpoint={endpoint}>
@@ -152,61 +181,6 @@ const App = () => {
             </div>
           </header>
 
-          <div id="link2" className="container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
-            aliquet, semper sapien sed, ornare augue. Phasellus sed velit interdum,
-            sagittis metus quis, facilisis lectus. Cras sollicitudin purus at magna
-            eleifend maximus. Nulla nec nulla in nunc maximus viverra in at mauris.
-            Fusce sodales dolor nisi, et vehicula orci porta id. In placerat nunc
-            sed erat lacinia tincidunt. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Vestibulum commodo eget metus vitae tempus. Aliquam
-            pharetra mi at efficitur accumsan. Curabitur venenatis libero a ex
-            porttitor, at auctor turpis hendrerit. Nam commodo, risus non consequat
-            pretium, erat ante auctor purus, a cursus dolor erat at velit. Maecenas
-            dignissim, dolor sed laoreet aliquam, tortor lacus faucibus urna, eget
-            mattis massa sem ac dui. Nam semper hendrerit interdum. Etiam at dictum
-            nisi.
-          </div>
-
-          <div id="link3" className="container card">
-            <h1 className="pb-3">Lorem ipsum</h1>
-          </div>
-
-          <div id="link4" className="container faq">
-            <h1 style={{ padding: "0 0 24px 0" }}>FAQ</h1>
-            <div>
-              <h4>Lorem ipsum?</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                id metus id mauris tincidunt posuere. Vivamus neque odio, imperdiet
-                vitae.
-              </p>
-
-              <hr />
-            </div>
-
-            <div>
-              <h4>Lorem ipsum?</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                id metus id mauris tincidunt posuere. Vivamus neque odio, imperdiet
-                vitae.
-              </p>
-
-              <hr />
-            </div>
-
-            <div>
-              <h4>Lorem ipsum?</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                id metus id mauris tincidunt posuere. Vivamus neque odio, imperdiet
-                vitae.
-              </p>
-
-              <hr />
-            </div>
-          </div>
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ function date(date: string) {
 export const mintPanic = {
   enabled: false,
   title: "Minting Paused",
-  desc: "We have dectected and issue while minting. Standby for an update",
+  desc: "We have dectected an issue while minting. Standby for an update",
 };
 
 ///                             ///
@@ -52,16 +52,16 @@ export const welcomeSettings: WelcomeSettings = {
 
   //Title and Description
   title: "Welcome!",
-  desc: "Connect your wallet and load in! Whitelist mint starts soon!",
+  desc: "Connect your wallet and load in! Presale Starts soon!",
 
   // Countdown Timer
   countdownEnable: true,
-  countdownTo: date("08 Jan 2022 22:00:00 GMT"),
+  countdownTo: date("14 July 2022 23:59:00 EST"),
   //Example date below
   // date('29 2021 00:00:00 GMT')
 
   // showprice
-  showPrice: true,
+  showPrice: false,
 
   //Enable Custom HTML
   enableCustomHTML: true,
@@ -74,7 +74,7 @@ export class MintWelcomeCustomHTML extends React.Component {
         {/* Add Custom HTML code for Welcome Here! */}
 
         
-        <p>Pre Sale will be started soon !</p>
+        {/* <p>Whitelisted Dude Sale will be started soon !!!</p> */}
         
         
         {/* End */}
@@ -99,15 +99,15 @@ export const whitelistSettings: WhitelistSettings = {
   //If you want to use the whitelist feature enable it.
   enabled: true,
 
-  startDate: date("08 Jan 2022 22:00:00 GMT"),
-  endDate: date("08 Jan 2022 22:30:00 GMT"),
+  startDate: date("14 July 2022 23:59:00 EST"),
+  endDate: date("15 July 2022 23:59:00 EST"),
   countdown: true,
   //Example date below
   // date('29 2021 00:00:00 GMT')
 
   //Wallet Title and Description
-  title: "White Ninjas",
-  desc: undefined,
+  title: "WL Dudes Sale",
+  desc: "Presale is now Live. Mint your Dope Dudes below",
 
   //Enable Custom HTML Below
   enableCustomHTML: true,
@@ -121,7 +121,7 @@ export class MintWhitelistCustomHTML extends React.Component {
         {/* Add Custom HTML code for Whitelist Stage Here! */}
 
         
-        <p>Pre Sale !!!!</p>
+        <p>Presale is Live</p>
         
         
         {/* End */}
@@ -138,15 +138,15 @@ export class MintWhitelistCustomHTML extends React.Component {
 export const publicSaleSettings: PublicSaleSettings = {
   //start date and end date must match your Candy Machine Config for public launch!
 
-  startDate: date("08 Jan 2022 22:30:00 GMT"),
-  endDate: undefined,
+  startDate: date("15 July 2022 23:59:00 EST"),
+  endDate: date("15 Aug 2022 23:59:00 EST"),
   countdown: false,
   //Example date below
   // date('29 2021 00:00:00 GMT')
 
   //Title and Description
-  title: "Sold Out",
-  desc: "Sale is now live. Mint your Ninja Guru below",
+  title: "Public Dudes Sale",
+  desc: "Public Sale is now Live. Mint your Ninja Gurus below",
 
   //Enable Custom HTML
   enableCustomHTML: true,
@@ -159,7 +159,7 @@ export class MintPublicSaleCustomHTML extends React.Component {
         {/* Add Custom HTML code for Public Minting Here! */}
 
         
-        <p>Sold Out !!!!</p>
+        <p>Public Sale is Live</p>
         
         
         {/* End */}

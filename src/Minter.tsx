@@ -41,7 +41,7 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: linear-gradient(270deg, #1868B8 0%, #000305 100%);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -125,7 +125,7 @@ const Home = (props: HomeProps) => {
         if (!status?.err) {
           setAlertState({
             open: true,
-            message: "Congratulations! Mint succeeded!",
+            message: "Congratulations! Ninja Guru Minted Successfully!",
             severity: "success",
           });
 
@@ -315,7 +315,7 @@ const Home = (props: HomeProps) => {
                         ))}
                     </div>
 
-                    <div className="text-end">
+                    {/* <div className="text-end">
                       {(phase === Phase.Welcome && welcomeSettings.showPrice) ||
                       phase === Phase.WhiteListMint ||
                       phase === Phase.PublicMint ? (
@@ -330,8 +330,7 @@ const Home = (props: HomeProps) => {
                         ""
                       )}
 
-                      {/* {formatSol(yourSOLBalance || 0).toLocaleString()} SOL */}
-                    </div>
+                    </div> */}
                   </Grid>
 
                   {!wallet.connected ? (

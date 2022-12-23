@@ -291,6 +291,7 @@ header {
 }
 
 .minting-box {
+  box-shadow: var(--minting-box-shadow) !important;
   background-color: var(--minting-box-color) !important;
   color: var(--minting-box-text-color) !important;
 }
